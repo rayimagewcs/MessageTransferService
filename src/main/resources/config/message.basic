@@ -1,0 +1,21 @@
+
+{
+	"basic": {
+		"proMap": [
+			{"name": "basicpf"},
+			{"url": "http://192.168.64.220:8083/"}
+		],
+		"proList": [
+			"test1",
+			"test2"
+		],
+		"proListMap": [
+			{"name": "key1"},
+			{"value": "value1"},
+			{"name": "key2"},
+			{"value": "value2"}
+		],
+		"basicServiceUrl": "http://192.168.64.220:8083/",
+		"seniorServiceUrl": "http://192.168.64.220:8084/"
+	}
+}
