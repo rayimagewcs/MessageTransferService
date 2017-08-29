@@ -1,0 +1,11 @@
+com\thinvent\message\controller\MessageController.class
+com\thinvent\message\threadpool\TransferThread.class
+com\thinvent\message\handler\IMessageHandler.class
+com\thinvent\message\entity\Message.class
+com\thinvent\message\config\MessageApplication.class
+com\thinvent\message\threadpool\ThinventThreadPool.class
+com\thinvent\message\adapt\impl\MessageAdaptImpl.class
+com\thinvent\message\handler\impl\MessageHandlerImpl.class
+com\thinvent\message\transfer\queue\MessageQueue.class
+com\thinvent\message\MessageTransferApplication.class
+com\thinvent\message\adapt\IMessageAdapt.class

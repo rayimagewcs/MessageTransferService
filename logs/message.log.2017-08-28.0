@@ -1,0 +1,115 @@
+2017-08-28 18:19:14.710  INFO 2864 --- [main] c.t.message.MessageTransferApplication   : Starting MessageTransferApplication on Hasee-PC with PID 2864 (E:\github\MessageTransferService\target\classes started by HASEE in E:\github\MessageTransferService)
+2017-08-28 18:19:14.712 DEBUG 2864 --- [main] c.t.message.MessageTransferApplication   : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-08-28 18:19:14.712  INFO 2864 --- [main] c.t.message.MessageTransferApplication   : The following profiles are active: dev
+2017-08-28 18:19:14.749  INFO 2864 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41c2284a: startup date [Mon Aug 28 18:19:14 CST 2017]; root of context hierarchy
+2017-08-28 18:19:14.959  INFO 2864 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2017-08-28 18:19:15.447  INFO 2864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$5a8628bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-08-28 18:19:15.740  INFO 2864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8086 (http)
+2017-08-28 18:19:15.751  INFO 2864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-28 18:19:15.752  INFO 2864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-28 18:19:15.866  INFO 2864 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-28 18:19:15.866  INFO 2864 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1118 ms
+2017-08-28 18:19:15.977  INFO 2864 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-28 18:19:15.980  INFO 2864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-28 18:19:15.981  INFO 2864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-28 18:19:15.981  INFO 2864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-28 18:19:15.981  INFO 2864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-28 18:19:16.233  INFO 2864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41c2284a: startup date [Mon Aug 28 18:19:14 CST 2017]; root of context hierarchy
+2017-08-28 18:19:16.285  INFO 2864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/push],methods=[GET]}" onto public void com.thinvent.message.controller.MessageController.pushMessage(int)
+2017-08-28 18:19:16.287  INFO 2864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-28 18:19:16.287  INFO 2864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-28 18:19:16.311  INFO 2864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 18:19:16.311  INFO 2864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 18:19:16.354  INFO 2864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 18:19:16.608  INFO 2864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-28 18:19:16.613  INFO 2864 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-08-28 18:19:16.620  INFO 2864 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8086"]
+2017-08-28 18:19:16.627  INFO 2864 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8086"]
+2017-08-28 18:19:16.666  INFO 2864 --- [main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2017-08-28 18:19:16.679  INFO 2864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8086 (http)
+2017-08-28 18:19:16.681  INFO 2864 --- [main] c.t.message.MessageTransferApplication   : Started MessageTransferApplication in 2.226 seconds (JVM running for 2.665)
+2017-08-28 18:19:57.420  INFO 8356 --- [main] c.t.message.MessageTransferApplication   : Starting MessageTransferApplication on Hasee-PC with PID 8356 (E:\github\MessageTransferService\target\classes started by HASEE in E:\github\MessageTransferService)
+2017-08-28 18:19:57.424 DEBUG 8356 --- [main] c.t.message.MessageTransferApplication   : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-08-28 18:19:57.425  INFO 8356 --- [main] c.t.message.MessageTransferApplication   : The following profiles are active: dev
+2017-08-28 18:19:57.472  INFO 8356 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@302a07d: startup date [Mon Aug 28 18:19:57 CST 2017]; root of context hierarchy
+2017-08-28 18:19:57.790  INFO 8356 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2017-08-28 18:19:58.322  INFO 8356 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$d145e33f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-08-28 18:19:58.640  INFO 8356 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8086 (http)
+2017-08-28 18:19:58.650  INFO 8356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-28 18:19:58.651  INFO 8356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-28 18:19:58.761  INFO 8356 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-28 18:19:58.761  INFO 8356 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1289 ms
+2017-08-28 18:19:58.905  INFO 8356 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-28 18:19:58.908  INFO 8356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-28 18:19:58.909  INFO 8356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-28 18:19:58.909  INFO 8356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-28 18:19:58.909  INFO 8356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-28 18:20:03.743  WARN 8356 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'thinventThreadPool' defined in file [E:\github\MessageTransferService\target\classes\com\thinvent\message\threadpool\ThinventThreadPool.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.thinvent.message.threadpool.ThinventThreadPool]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2017-08-28 18:20:03.747  INFO 8356 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-08-28 18:20:03.803  INFO 8356 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-08-28 18:20:03.808 ERROR 8356 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'thinventThreadPool' defined in file [E:\github\MessageTransferService\target\classes\com\thinvent\message\threadpool\ThinventThreadPool.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.thinvent.message.threadpool.ThinventThreadPool]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at com.thinvent.message.MessageTransferApplication.main(MessageTransferApplication.java:22)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.thinvent.message.threadpool.ThinventThreadPool]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
+	... 15 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.thinvent.library.config.ServiceConfig.getServiceConfig(ServiceConfig.java:35)
+	at com.thinvent.message.threadpool.ThinventThreadPool.<init>(ThinventThreadPool.java:19)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	... 17 common frames omitted
+
+2017-08-28 18:30:02.567  INFO 7648 --- [main] c.t.message.MessageTransferApplication   : Starting MessageTransferApplication on Hasee-PC with PID 7648 (E:\github\MessageTransferService\target\classes started by HASEE in E:\github\MessageTransferService)
+2017-08-28 18:30:02.571 DEBUG 7648 --- [main] c.t.message.MessageTransferApplication   : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-08-28 18:30:02.571  INFO 7648 --- [main] c.t.message.MessageTransferApplication   : The following profiles are active: dev
+2017-08-28 18:30:02.621  INFO 7648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fce136b: startup date [Mon Aug 28 18:30:02 CST 2017]; root of context hierarchy
+2017-08-28 18:30:02.873  INFO 7648 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2017-08-28 18:30:03.459  INFO 7648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$8e37a5c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-08-28 18:30:03.806  INFO 7648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8086 (http)
+2017-08-28 18:30:03.817  INFO 7648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-28 18:30:03.818  INFO 7648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-08-28 18:30:03.928  INFO 7648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-28 18:30:03.928  INFO 7648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1307 ms
+2017-08-28 18:30:04.107  INFO 7648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-28 18:30:04.112  INFO 7648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-28 18:30:04.112  INFO 7648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-28 18:30:04.112  INFO 7648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-28 18:30:04.112  INFO 7648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-28 18:30:10.753  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fce136b: startup date [Mon Aug 28 18:30:02 CST 2017]; root of context hierarchy
+2017-08-28 18:30:10.826  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/message/push],methods=[GET]}" onto public void com.thinvent.message.controller.MessageController.pushMessage(int)
+2017-08-28 18:30:10.830  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-28 18:30:10.830  INFO 7648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-28 18:30:10.882  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 18:30:10.882  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 18:30:10.935  INFO 7648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 18:30:11.501  INFO 7648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-28 18:30:11.507  INFO 7648 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-08-28 18:30:11.515  INFO 7648 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8086"]
+2017-08-28 18:30:11.526  INFO 7648 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8086"]
+2017-08-28 18:30:11.536  INFO 7648 --- [main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2017-08-28 18:30:11.552  INFO 7648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8086 (http)
+2017-08-28 18:30:11.557  INFO 7648 --- [main] c.t.message.MessageTransferApplication   : Started MessageTransferApplication in 9.279 seconds (JVM running for 9.904)

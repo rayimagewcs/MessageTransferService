@@ -1,25 +1,30 @@
 package com.thinvent.message.transfer.queue;
 
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import com.thinvent.message.entity.Message;
+import org.springframework.stereotype.Component;
+
+import com.thinvent.library.mq.entity.Message;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class MessageQueue {
-	private ReadWriteLock lock = new ReentrantReadWriteLock();
+	private static ReadWriteLock lock = new ReentrantReadWriteLock();
 	
-	private Queue<Message> messageQueue = new ConcurrentLinkedQueue<Message>();
+	private static Queue<Message> messageQueue = new ConcurrentLinkedQueue<Message>();
+	
+	private static AtomicInteger i = new AtomicInteger();
 	
 	public void push(Message message) {
 		try {
 			lock.writeLock().lock();
 			messageQueue.add(message);
+			System.out.println("incrementAndGet size: " + i.incrementAndGet());
 		} catch(Exception e) {
 			log.error("push message error: ", e);
 		} finally {
@@ -28,6 +33,10 @@ public class MessageQueue {
 	}
 	
 	public Message get() {
-		return messageQueue.poll();
+		Message msg = messageQueue.poll();
+		if(msg != null) {
+			System.out.println("incrementAndGet size: " + i.decrementAndGet());
+		}
+		return msg;
 	}
 }

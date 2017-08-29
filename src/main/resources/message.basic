@@ -1,0 +1,9 @@
+
+{
+	"threadpool": {
+		"corePoolsize": 10,
+		"maximumPoolSize": 15,
+		"poolsize": 200
+	},
+	"adminServiceUrl": "127.0.0.1:8083"
+}
