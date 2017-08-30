@@ -12,6 +12,7 @@ import com.thinvent.library.util.StringUtil;
 import com.thinvent.message.config.MessageApplication;
 import com.thinvent.message.handler.IMessageHandler;
 import com.thinvent.message.handler.impl.MessageHandlerImpl;
+import com.thinvent.message.threadpool.ThinventThreadPool;
 
 @SpringBootApplication
 public class MessageTransferApplication {
@@ -20,16 +21,17 @@ public class MessageTransferApplication {
 		SpringApplication application = new SpringApplication(MessageTransferApplication.class);
 		application.setDefaultProperties(ServiceConfig.loadSpringConfig("message"));
 		application.run(args);
-		test();
+//		test();
 	}
 	
 	public static void test() {
+//		ThinventThreadPool executor = new ThinventThreadPool();
 		for(;;) {
-			System.out.println(System.nanoTime());
+//			System.out.println(System.nanoTime());
 			IMessageHandler msgHandler = new MessageHandlerImpl();
 			Message message = new Message();
 			msgHandler.transfer(message);
-			System.out.println(System.currentTimeMillis());
+//			System.out.println(System.currentTimeMillis());
 		}
 	}
 }

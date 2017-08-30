@@ -24,7 +24,7 @@ public class MessageQueue {
 		try {
 			lock.writeLock().lock();
 			messageQueue.add(message);
-			System.out.println("incrementAndGet size: " + i.incrementAndGet());
+//			System.out.println("incrementAndGet size: " + i.incrementAndGet());
 		} catch(Exception e) {
 			log.error("push message error: ", e);
 		} finally {
@@ -35,7 +35,7 @@ public class MessageQueue {
 	public Message get() {
 		Message msg = messageQueue.poll();
 		if(msg != null) {
-			System.out.println("incrementAndGet size: " + i.decrementAndGet());
+//			System.out.println("incrementAndGet size: " + i.decrementAndGet());
 		}
 		return msg;
 	}

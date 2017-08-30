@@ -1,6 +1,6 @@
 
 {
 	"server": {
-		"port": "${port:8086}"
+		"port": "${port:8091}"
 	}
 }
