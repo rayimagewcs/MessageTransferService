@@ -26,6 +26,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpasyncclient</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+		<dependency>
 			<groupId>com.thinvent.basicpf.library</groupId>
 			<artifactId>common-library</artifactId>
 			<version>0.0.1-SNAPSHOT</version>

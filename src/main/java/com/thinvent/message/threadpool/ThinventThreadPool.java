@@ -2,7 +2,6 @@ package com.thinvent.message.threadpool;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -24,9 +23,6 @@ public class ThinventThreadPool {
 		long keepAliveTime = Long.parseLong(ServiceConfig.getServiceConfig("message.basic", "threadpool.keepAliveTime"));
 		BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue(maximumPoolSize);
 		executor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, TimeUnit.SECONDS, workQueue);
-//		BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue(10);
-//		BlockingQueue<Runnable> workQueue = new LinkedBlockingQueue(100);
-//		executor = new ThreadPoolExecutor(100, 150, 0, TimeUnit.SECONDS, workQueue);
 	}
 	
 	public static void execute(Runnable runnable) {

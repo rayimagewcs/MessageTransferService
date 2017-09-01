@@ -16,7 +16,6 @@ public class MessageHandlerImpl implements IMessageHandler {
 		MessageQueue queue = new MessageQueue();
 		queue.push(message);
 		ThinventThreadPool.execute(new TransferThread());
-		System.out.println("transfer ...");
 	}
 
 }

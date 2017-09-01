@@ -16,11 +16,11 @@ public class TransferThread implements Runnable {
 	public void run() {
 		MessageQueue messageQueue = new MessageQueue();
 		Message message = messageQueue.get();
-//		try {
-//			messageAdapt.transfer(message);
-//		} catch (ThinventBaseException e) {
-//			log.error("adapt transfer message error: ", message);
-//		}
+		try {
+			messageAdapt.transfer(message);
+		} catch (ThinventBaseException e) {
+			log.error("adapt transfer message error: ", message);
+		}
 	}
 
 }
